@@ -1,0 +1,11 @@
+@import "_variables.scss";
+
+body {
+	background-color: $background-color;
+}
+
+.page {
+	min-width: $min-page-width;
+	position: relative;
+	z-index: 2;
+}

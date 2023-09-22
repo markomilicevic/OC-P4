@@ -1,0 +1,45 @@
+@import "../bases/_variables.scss";
+
+/* Header module */
+
+.header {
+	display: flex;
+	flex-direction: row;
+	height: 63px;
+	align-items: center;
+	justify-content: space-between;
+	background-color: $white-color;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+	position: relative;
+
+	nav a,
+	&__last {
+		display: inline-block;
+		width: 55px;
+		padding: 17px;
+	}
+
+	nav {
+		a {
+			color: $black-color;
+		}
+	}
+
+	&__logo {
+		font-family: $title-font;
+		font-size: 1.875rem;
+		font-weight: $regular-font-weight;
+		color: $black2-color;
+		padding-top: 6px;
+	}
+
+	&__last {
+		/* This element exists to make the logo centered */
+		visibility: hidden;
+	}
+
+	/* When only a child (the logo on the Home) */
+	& > *:only-child {
+		margin: auto;
+	}
+}
