@@ -2,12 +2,14 @@
 /* Fonts */
 /* Colors */
 /* Breakpoints */
+/* Desktop breakpoint including 20px of left and 20px of right margins */
 /* External fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
 /* Variables */
 /* Fonts */
 /* Colors */
 /* Breakpoints */
+/* Desktop breakpoint including 20px of left and 20px of right margins */
 /* Reset */
 * {
   font-family: "Roboto", sans-serif;
@@ -30,6 +32,7 @@ a {
 /* Fonts */
 /* Colors */
 /* Breakpoints */
+/* Desktop breakpoint including 20px of left and 20px of right margins */
 body {
   background-color: #f6f6f6;
 }
@@ -44,6 +47,7 @@ body {
 /* Fonts */
 /* Colors */
 /* Breakpoints */
+/* Desktop breakpoint including 20px of left and 20px of right margins */
 /* Header module */
 .header {
   display: flex;
@@ -83,6 +87,7 @@ body {
 /* Fonts */
 /* Colors */
 /* Breakpoints */
+/* Desktop breakpoint including 20px of left and 20px of right margins */
 /* Button module */
 .button {
   display: inline-block;
@@ -100,6 +105,7 @@ body {
 /* Fonts */
 /* Colors */
 /* Breakpoints */
+/* Desktop breakpoint including 20px of left and 20px of right margins */
 /* Like module */
 .like {
   display: inline-block;
@@ -112,10 +118,12 @@ body {
 /* Fonts */
 /* Colors */
 /* Breakpoints */
+/* Desktop breakpoint including 20px of left and 20px of right margins */
 /* Variables */
 /* Fonts */
 /* Colors */
 /* Breakpoints */
+/* Desktop breakpoint including 20px of left and 20px of right margins */
 /* Badge module */
 .badge {
   display: inline-block;
@@ -185,6 +193,7 @@ body {
 /* Fonts */
 /* Colors */
 /* Breakpoints */
+/* Desktop breakpoint including 20px of left and 20px of right margins */
 /* Footer module */
 .footer {
   display: flex;
@@ -192,16 +201,40 @@ body {
   background-color: #353535;
   padding: 22px 25px 22px 25px;
 }
+@media screen and (min-width: 1120px) {
+  .footer {
+    flex-direction: row-reverse;
+    padding: 64px 50px 30px 30px;
+  }
+}
 .footer__logo {
   width: 139px;
   height: 27px;
   filter: invert(100%); /* Switch from black to white color */
+}
+@media screen and (min-width: 1120px) {
+  .footer__logo {
+    width: 108px;
+    height: 20.9784172662px;
+  }
 }
 .footer__links {
   display: flex;
   flex-direction: column;
   margin-top: 16px;
   gap: 7px;
+}
+@media screen and (min-width: 1120px) {
+  .footer__links {
+    flex-direction: row;
+    margin-top: 0;
+  }
+  .footer__links :nth-of-type(2) {
+    margin-right: 40px;
+  }
+  .footer__links :nth-of-type(4) {
+    margin-right: 80px;
+  }
 }
 .footer__links a {
   color: white;
@@ -235,6 +268,12 @@ body {
   text-align: center;
   padding: 40px 20px 60px 20px;
 }
+@media screen and (min-width: 1120px) {
+  .title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
 .title h1 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -252,8 +291,14 @@ body {
   gap: 26px;
   background-color: white;
 }
+@media screen and (min-width: 1120px) {
+  .steps {
+    padding-bottom: 50px;
+  }
+}
 .steps > * {
   width: 100%;
+  max-width: 1080px;
   margin: auto;
 }
 .steps h2 {
@@ -266,6 +311,11 @@ body {
   flex-direction: column;
   gap: 25px;
 }
+@media screen and (min-width: 1120px) {
+  .steps__list {
+    flex-direction: row;
+  }
+}
 
 .step {
   display: flex;
@@ -276,6 +326,11 @@ body {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   padding: 24px 0 24px 0;
+}
+@media screen and (min-width: 1120px) {
+  .step {
+    width: 33%;
+  }
 }
 .step > * {
   position: relative;
@@ -315,7 +370,14 @@ body {
   padding: 54px 20px 66px 20px;
   gap: 18px;
   width: 100%;
+  max-width: 1120px;
   margin: auto;
+}
+@media screen and (min-width: 1120px) {
+  .restaurants {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 .restaurants h2 {
   font-size: 1.5rem;
@@ -326,4 +388,18 @@ body {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+@media screen and (min-width: 1120px) {
+  .restaurants__list {
+    column-gap: 100px;
+    row-gap: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .restaurants__list .enriched-card {
+    /* Have two columns with only a visible gap in the middle */
+    min-width: calc(50% - 50px);
+  }
 }

@@ -20,6 +20,10 @@
 	height: 275px;
 	width: 100%;
 	object-fit: cover;
+
+	@media screen and (min-width: $desktop-breakpoint-with-margins-width) {
+		height: 383px;
+	}
 }
 
 .menu {
@@ -36,8 +40,17 @@
 	width: 100%;
 	margin: auto;
 
+	@media screen and (min-width: $desktop-breakpoint-with-margins-width) {
+		padding-top: 50px;
+		max-width: 1055px;
+	}
+
 	& > * {
 		width: 100%;
+
+		@media screen and (min-width: $desktop-breakpoint-with-margins-width) {
+			width: 634px;
+		}
 	}
 
 	&__section {
@@ -69,6 +82,11 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	@media screen and (min-width: $desktop-breakpoint-with-margins-width) {
+		justify-content: center;
+		gap: 20px;
+	}
 
 	h1 {
 		font-family: $title-font;

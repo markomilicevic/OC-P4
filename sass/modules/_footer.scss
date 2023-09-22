@@ -8,16 +8,29 @@ $logo-image-mobile-height: 27px;
 
 $logo-image-ratio: math.div($logo-image-mobile-width, $logo-image-mobile-height);
 
+$logo-image-desktop-width: 108px;
+$logo-image-desktop-height: math.div($logo-image-desktop-width, $logo-image-ratio);
+
 .footer {
 	display: flex;
 	flex-direction: column;
 	background-color: $grey-color;
 	padding: 22px 25px 22px 25px;
 
+	@media screen and (min-width: $desktop-breakpoint-with-margins-width) {
+		flex-direction: row-reverse;
+		padding: 64px 50px 30px 30px;
+	}
+
 	&__logo {
 		width: $logo-image-mobile-width;
 		height: $logo-image-mobile-height;
 		filter: invert(100%); /* Switch from black to white color */
+
+		@media screen and (min-width: $desktop-breakpoint-with-margins-width) {
+			width: $logo-image-desktop-width;
+			height: $logo-image-desktop-height;
+		}
 	}
 
 	&__links {
@@ -25,6 +38,19 @@ $logo-image-ratio: math.div($logo-image-mobile-width, $logo-image-mobile-height)
 		flex-direction: column;
 		margin-top: 16px;
 		gap: 7px;
+
+		@media screen and (min-width: $desktop-breakpoint-with-margins-width) {
+			flex-direction: row;
+			margin-top: 0;
+
+			:nth-of-type(2) {
+				margin-right: 40px;
+			}
+
+			:nth-of-type(4) {
+				margin-right: 80px;
+			}
+		}
 
 		a {
 			color: $white-color;
