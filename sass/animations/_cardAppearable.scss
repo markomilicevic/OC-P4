@@ -1,0 +1,31 @@
+/* Card appearing animation */
+
+$left-position: -100px;
+$elements-to-animate-nbr: 20; /* Change this value if we have more elements */
+
+.card {
+	animation-name: animate-enriched-card-appearing;
+	animation-duration: 200ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+	opacity: 0;
+	transform: translateX($left-position);
+
+	@for $i from 1 through $elements-to-animate-nbr {
+		&:nth-of-type(#{$i}) {
+			animation-delay: 400ms + (100ms * $i);
+		}
+	}
+}
+
+footer {
+	/* Make sure appearing **under** the footer */
+	position: relative;
+}
+
+@keyframes animate-enriched-card-appearing {
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}

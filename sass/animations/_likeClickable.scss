@@ -1,0 +1,56 @@
+@import "../bases/_variables.scss";
+
+/* Like clicking animation */
+
+.like {
+	position: relative;
+
+	.like__off,
+	.like__on {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -11px;
+		margin-top: -11px;
+		transition-property: opacity;
+		transition-duration: 500ms;
+	}
+
+	.like__off {
+		opacity: 1;
+	}
+
+	.like__on {
+		opacity: 0;
+	}
+
+	&:hover, &:focus {
+		.like__off {
+			opacity: 0;
+		}
+
+		.like__on {
+			opacity: 1;
+		}
+	}
+
+	&--liked {
+		.like__off {
+			opacity: 0;
+		}
+
+		.like__on {
+			opacity: 1;
+		}
+
+		&:hover, &:focus {
+			.like__off {
+				opacity: 1;
+			}
+
+			.like__on {
+				opacity: 0;
+			}
+		}
+	}
+}

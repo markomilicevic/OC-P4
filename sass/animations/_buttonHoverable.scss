@@ -1,0 +1,15 @@
+/* Button hoverable animation */
+
+.button {
+	transition-property: transform, opacity;
+	transition-duration: 200ms;
+	transform: translate(0, 0);
+	opacity: 1;
+
+	&:hover {
+		background: $button_gradient !important;
+		transform: translate(2px, 2px);
+		opacity: 0.8;
+		box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+	}
+}
