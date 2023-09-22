@@ -3,8 +3,117 @@
 /* Colors */
 /* Breakpoints */
 /* Desktop breakpoint including 20px of left and 20px of right margins */
-/* External fonts */
+/* Page appearing animation */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
+.page-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  animation-name: animate-page-appearing;
+  animation-duration: 3000ms;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  z-index: 1;
+}
+.page-loader .page-loader__icon {
+  animation-name: icon-rotation;
+  animation-duration: 3000ms;
+  animation-fill-mode: both;
+  width: 50px;
+}
+
+@keyframes animate-page-appearing {
+  0% {
+    opacity: 1;
+    z-index: 999;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes icon-rotation {
+  0% {
+    transform: translateX(-100px) rotate(-45deg) scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg) scale(3);
+    opacity: 1;
+  }
+}
+/* Variables */
+/* Fonts */
+/* Colors */
+/* Breakpoints */
+/* Desktop breakpoint including 20px of left and 20px of right margins */
+/* Like clicking animation */
+.like {
+  position: relative;
+}
+.like .like__off,
+.like .like__on {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -11px;
+  margin-top: -11px;
+  transition-property: opacity;
+  transition-duration: 500ms;
+}
+.like .like__off {
+  opacity: 1;
+}
+.like .like__on {
+  opacity: 0;
+}
+.like:hover .like__off, .like:focus .like__off {
+  opacity: 0;
+}
+.like:hover .like__on, .like:focus .like__on {
+  opacity: 1;
+}
+.like--liked .like__off {
+  opacity: 0;
+}
+.like--liked .like__on {
+  opacity: 1;
+}
+.like--liked:hover .like__off, .like--liked:focus .like__off {
+  opacity: 1;
+}
+.like--liked:hover .like__on, .like--liked:focus .like__on {
+  opacity: 0;
+}
+
+/* Button hoverable animation */
+.button {
+  transition-property: transform, opacity;
+  transition-duration: 200ms;
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.button:hover {
+  background: linear-gradient(175deg, rgb(251, 62, 198) 0%, rgb(147, 86, 220) 100%) !important;
+  transform: translate(2px, 2px);
+  opacity: 0.8;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+/* Variables */
+/* Fonts */
+/* Colors */
+/* Breakpoints */
+/* Desktop breakpoint including 20px of left and 20px of right margins */
+/* External fonts */
 /* Variables */
 /* Fonts */
 /* Colors */

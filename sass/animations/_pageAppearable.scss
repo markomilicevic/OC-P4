@@ -1,0 +1,54 @@
+@import "../bases/_variables.scss";
+
+/* Page appearing animation */
+
+.page-loader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $white-color;
+	animation-name: animate-page-appearing;
+	animation-duration: 3000ms;
+	animation-fill-mode: both;
+	animation-timing-function: linear;
+	z-index: 1;
+
+	.page-loader__icon {
+		animation-name: icon-rotation;
+		animation-duration: 3000ms;
+		animation-fill-mode: both;
+		width: 50px;
+	}
+}
+
+@keyframes animate-page-appearing {
+	0% {
+		opacity: 1;
+		z-index: 999;
+	}
+
+	75% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes icon-rotation {
+	0% {
+		transform: translateX(-100px) rotate(-45deg) scale(1);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0px) rotate(0deg) scale(3);
+		opacity: 1;
+	}
+}

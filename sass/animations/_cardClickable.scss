@@ -1,0 +1,29 @@
+@import "../bases/_variables.scss";
+
+/* Card clicking animation */
+
+.card {
+	&__secondary {
+		transition-property: transform;
+		transition-duration: 750ms;
+		transform: translateX(0px);
+		width: 50px;
+
+		strong {
+			background-color: $white-color;
+		}
+	}
+
+	&:hover, &:focus {
+		.card__secondary {
+			transition-duration: 100ms;
+			transform: translateX(-60px);
+			width: 110px;
+			padding-left: 70px;
+
+			.card__action {
+				left: 110px;
+			}
+		}
+	}
+}
