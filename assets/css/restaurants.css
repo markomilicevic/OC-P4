@@ -2,12 +2,14 @@
 /* Fonts */
 /* Colors */
 /* Breakpoints */
+/* Desktop breakpoint including 20px of left and 20px of right margins */
 /* External fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
 /* Variables */
 /* Fonts */
 /* Colors */
 /* Breakpoints */
+/* Desktop breakpoint including 20px of left and 20px of right margins */
 /* Reset */
 * {
   font-family: "Roboto", sans-serif;
@@ -30,6 +32,7 @@ a {
 /* Fonts */
 /* Colors */
 /* Breakpoints */
+/* Desktop breakpoint including 20px of left and 20px of right margins */
 body {
   background-color: #f6f6f6;
 }
@@ -44,6 +47,7 @@ body {
 /* Fonts */
 /* Colors */
 /* Breakpoints */
+/* Desktop breakpoint including 20px of left and 20px of right margins */
 /* Header module */
 .header {
   display: flex;
@@ -83,6 +87,7 @@ body {
 /* Fonts */
 /* Colors */
 /* Breakpoints */
+/* Desktop breakpoint including 20px of left and 20px of right margins */
 /* Button module */
 .button {
   display: inline-block;
@@ -100,6 +105,7 @@ body {
 /* Fonts */
 /* Colors */
 /* Breakpoints */
+/* Desktop breakpoint including 20px of left and 20px of right margins */
 /* Card module */
 .card {
   display: flex;
@@ -172,6 +178,7 @@ body {
 /* Fonts */
 /* Colors */
 /* Breakpoints */
+/* Desktop breakpoint including 20px of left and 20px of right margins */
 /* Like module */
 .like {
   display: inline-block;
@@ -184,6 +191,7 @@ body {
 /* Fonts */
 /* Colors */
 /* Breakpoints */
+/* Desktop breakpoint including 20px of left and 20px of right margins */
 /* Section module */
 .section {
   text-transform: uppercase;
@@ -206,6 +214,7 @@ body {
 /* Fonts */
 /* Colors */
 /* Breakpoints */
+/* Desktop breakpoint including 20px of left and 20px of right margins */
 /* Footer module */
 .footer {
   display: flex;
@@ -213,16 +222,40 @@ body {
   background-color: #353535;
   padding: 22px 25px 22px 25px;
 }
+@media screen and (min-width: 1120px) {
+  .footer {
+    flex-direction: row-reverse;
+    padding: 64px 50px 30px 30px;
+  }
+}
 .footer__logo {
   width: 139px;
   height: 27px;
   filter: invert(100%); /* Switch from black to white color */
+}
+@media screen and (min-width: 1120px) {
+  .footer__logo {
+    width: 108px;
+    height: 20.9784172662px;
+  }
 }
 .footer__links {
   display: flex;
   flex-direction: column;
   margin-top: 16px;
   gap: 7px;
+}
+@media screen and (min-width: 1120px) {
+  .footer__links {
+    flex-direction: row;
+    margin-top: 0;
+  }
+  .footer__links :nth-of-type(2) {
+    margin-right: 40px;
+  }
+  .footer__links :nth-of-type(4) {
+    margin-right: 80px;
+  }
 }
 .footer__links a {
   color: white;
@@ -243,6 +276,11 @@ body {
   width: 100%;
   object-fit: cover;
 }
+@media screen and (min-width: 1120px) {
+  .photo {
+    height: 383px;
+  }
+}
 
 .menu {
   display: flex;
@@ -259,8 +297,19 @@ body {
   margin: auto;
   /* Hide the missing part due to the photo overlapping with the menu */
 }
+@media screen and (min-width: 1120px) {
+  .menu {
+    padding-top: 50px;
+    max-width: 1055px;
+  }
+}
 .menu > * {
   width: 100%;
+}
+@media screen and (min-width: 1120px) {
+  .menu > * {
+    width: 634px;
+  }
 }
 .menu__section {
   padding-top: 28px;
@@ -287,6 +336,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (min-width: 1120px) {
+  .title {
+    justify-content: center;
+    gap: 20px;
+  }
 }
 .title h1 {
   font-family: "Shrikhand", cursive;

@@ -30,3 +30,7 @@ $green-font-color: #008766;
 /* Breakpoints */
 
 $min-page-width: 375px;
+
+$desktop-breakpoint-width: 1080px;
+/* Desktop breakpoint including 20px of left and 20px of right margins */
+$desktop-breakpoint-with-margins-width: 20px + $desktop-breakpoint-width + 20px;
