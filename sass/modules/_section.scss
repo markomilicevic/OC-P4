@@ -1,0 +1,21 @@
+@import "../bases/_variables.scss";
+
+/* Section module */
+
+.section {
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: $light-font-weight;
+	position: relative;
+	margin-bottom: 12px;
+
+	&:after {
+		content: "";
+		position: absolute;
+		width: 40px;
+		display: block;
+		height: 3px;
+		background-color: $green-color;
+		bottom: -5px;
+	}
+}

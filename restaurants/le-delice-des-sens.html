@@ -4,161 +4,165 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Ohmyfood - Restaurant Le délice des sens à Folie-Méricourt</title>
+		<link rel="stylesheet" href="../assets/css/restaurants.css">
 		<script src="https://kit.fontawesome.com/925204a2f0.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<div>
-			<header>
+		<div class="page">
+			<header class="header">
 				<nav>
 					<a href="../" title="Revenir à la page précédente"><i class="fa-solid fa-arrow-left fa-lg"></i></a>
 				</nav>
 				<!-- Here the logo is textual in order to improve SEO -->
-				<strong>ohmyfood</strong>
+				<strong class="header__logo">ohmyfood</strong>
+				<div class="header__last"></div>
 			</header>
-			<main>
+			<main class="main">
 				<img
+					class="photo"
 					src="../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
 					alt="Photo plat au restaurant Le délice des sens"
 				>
 				<!-- Begin menu -->
-				<section>
-					<div>
+				<section class="menu">
+					<div class="title">
 						<h1>Le délice des sens</h1>
-						<div>
-							<img class="like__on" src="../assets/images/icons/like.svg" alt="Icône sous forme de coeur vide" title="Ajouter aux favoris">
+						<div class="like title__like">
+							<img class="like__off" src="../assets/images/icons/like.svg" alt="Icône sous forme de coeur vide" title="Enlever des favoris">
+							<img class="like__on" src="../assets/images/icons/liked.svg" alt="Icône sous forme de coeur plein" title="Ajouter aux favoris">
 						</div>
 					</div>
 
-					<h2>Entrées</h2>
-					<article>
-						<div>
+					<h2 class="section menu__section">Entrées</h2>
+					<article class="card">
+						<div class="card__main">
 							<h3>Tartare de thon</h3>
 							<br>
 							<span>Assaisonné au yuzu</span>
 						</div>
-						<div>
+						<div class="card__secondary">
 							<strong>25€</strong>
-							<div title="Ajouter à la commande">
+							<div class="card__action" title="Ajouter à la commande">
 								<i class="fa-solid fa-check fa-xs"></i>
 							</div>
 						</div>
 					</article>
-					<article>
-						<div>
+					<article class="card">
+						<div class="card__main">
 							<h3>Bouchée de homard croustillant</h3>
 							<br>
 							<span>Et sa farandole de petits légumes</span>
 						</div>
-						<div>
+						<div class="card__secondary">
 							<strong>35€</strong>
-							<div title="Ajouter à la commande">
+							<div class="card__action" title="Ajouter à la commande">
 								<i class="fa-solid fa-check fa-xs"></i>
 							</div>
 						</div>
 					</article>
-					<article>
-						<div>
+					<article class="card">
+						<div class="card__main">
 							<h3>Velouté de cèpes</h3>
 							<br>
 							<span>Aux truffes</span>
 						</div>
-						<div>
+						<div class="card__secondary">
 							<strong>20€</strong>
-							<div title="Ajouter à la commande">
+							<div class="card__action" title="Ajouter à la commande">
 								<i class="fa-solid fa-check fa-xs"></i>
 							</div>
 						</div>
 					</article>
 
-					<h2>Plats</h2>
-					<article>
-						<div>
+					<h2 class="section menu__section">Plats</h2>
+					<article class="card">
+						<div class="card__main">
 							<h3>Poulet rôti aux herbes de Provence</h3>
 							<br>
 							<span>Et sa crème de truffe</span>
 						</div>
-						<div>
+						<div class="card__secondary">
 							<strong>40€</strong>
-							<div title="Ajouter à la commande">
+							<div class="card__action" title="Ajouter à la commande">
 								<i class="fa-solid fa-check fa-xs"></i>
 							</div>
 						</div>
 					</article>
-					<article>
-						<div>
+					<article class="card">
+						<div class="card__main">
 							<h3>Langouste rôtie</h3>
 							<br>
 							<span>Et ses légumes de saison</span>
 						</div>
-						<div>
+						<div class="card__secondary">
 							<strong>35€</strong>
-							<div title="Ajouter à la commande">
+							<div class="card__action" title="Ajouter à la commande">
 								<i class="fa-solid fa-check fa-xs"></i>
 							</div>
 						</div>
 					</article>
-					<article>
-						<div>
+					<article class="card">
+						<div class="card__main">
 							<h3>Côte de bœuf Angus</h3>
 							<br>
 							<span>Et sa purée de panais</span>
 						</div>
-						<div>
+						<div class="card__secondary">
 							<strong>44€</strong>
-							<div title="Ajouter à la commande">
+							<div class="card__action" title="Ajouter à la commande">
 								<i class="fa-solid fa-check fa-xs"></i>
 							</div>
 						</div>
 					</article>
 
-					<h2>Desserts</h2>
-					<article>
-						<div>
+					<h2 class="section menu__section">Desserts</h2>
+					<article class="card">
+						<div class="card__main">
 							<h3>Farandole de desserts</h3>
 							<br>
 							<span>Du chef</span>
 						</div>
-						<div>
+						<div class="card__secondary">
 							<strong>18€</strong>
-							<div title="Ajouter à la commande">
+							<div class="card__action" title="Ajouter à la commande">
 								<i class="fa-solid fa-check fa-xs"></i>
 							</div>
 						</div>
 					</article>
-					<article>
-						<div>
+					<article class="card">
+						<div class="card__main">
 							<h3>Crème brulée</h3>
 							<br>
 							<span>Revisitée</span>
 						</div>
-						<div>
+						<div class="card__secondary">
 							<strong>22€</strong>
-							<div title="Ajouter à la commande">
+							<div class="card__action" title="Ajouter à la commande">
 								<i class="fa-solid fa-check fa-xs"></i>
 							</div>
 						</div>
 					</article>
-					<article>
-						<div>
+					<article class="card">
+						<div class="card__main">
 							<h3>Tiramisu</h3>
 							<br>
 							<span>À la noisette</span>
 						</div>
-						<div>
+						<div class="card__secondary">
 							<strong>23€</strong>
-							<div title="Ajouter à la commande">
+							<div class="card__action" title="Ajouter à la commande">
 								<i class="fa-solid fa-check fa-xs"></i>
 							</div>
 						</div>
 					</article>
 
-					<a href="#">Commander</a>
+					<a class="button menu__button" href="#">Commander</a>
 				</section>
 				<!-- End menu -->
 			</main>
-			<footer>
-				<img src="../assets/images/logo/ohmyfood@2x.svg" alt="Logo d'Ohmyfood">
-				<ul>
+			<footer class="footer">
+				<img class="footer__logo" src="../assets/images/logo/ohmyfood@2x.svg" alt="Logo d'Ohmyfood">
+				<ul class="footer__links">
 					<li>
 						<a href="#"><i class="fa-solid fa-utensils fa-xs"></i> Proposer un restaurant</a>
 					</li>

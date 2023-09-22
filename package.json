@@ -1,0 +1,14 @@
+{
+	"name": "oc-p4",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "npx sass --no-source-map --watch sass/:assets/css/"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"sass": "^1.66.1"
+	}
+}

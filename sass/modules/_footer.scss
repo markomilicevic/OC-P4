@@ -1,0 +1,38 @@
+@use "sass:math";
+@import "../bases/_variables.scss";
+
+/* Footer module */
+
+$logo-image-mobile-width: 139px;
+$logo-image-mobile-height: 27px;
+
+$logo-image-ratio: math.div($logo-image-mobile-width, $logo-image-mobile-height);
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	background-color: $grey-color;
+	padding: 22px 25px 22px 25px;
+
+	&__logo {
+		width: $logo-image-mobile-width;
+		height: $logo-image-mobile-height;
+		filter: invert(100%); /* Switch from black to white color */
+	}
+
+	&__links {
+		display: flex;
+		flex-direction: column;
+		margin-top: 16px;
+		gap: 7px;
+
+		a {
+			color: $white-color;
+			font-size: 1rem;
+
+			i {
+				width: 22px;
+			}
+		}
+	}
+}

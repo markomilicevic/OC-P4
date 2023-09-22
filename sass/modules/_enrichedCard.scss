@@ -1,0 +1,62 @@
+@import "../bases/_variables.scss";
+@import "_badge.scss";
+
+/* Enriched card module */
+
+.enriched-card {
+	display: flex;
+	background-color: $white-color;
+	border-radius: 15px;
+	position: relative;
+
+	&__link {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	&__badge {
+		position: absolute;
+		top: 13px;
+		right: 12px;
+	}
+
+	&__photo {
+		display: flex;
+		height: 174px;
+		width: 100%;
+		object-fit: cover;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 16px 70px 16px 13px;
+
+		h3 {
+			display: flex;
+			font-size: 1.125rem;
+			font-weight: $bold-font-weight;
+			color: $black-color;
+			padding-bottom: 5px;
+		}
+
+		span {
+			display: flex;
+			font-size: 1.063rem;
+			font-weight: $light-font-weight;
+			color: $black-color;
+		}
+	}
+
+	&__like {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding: 25px 25px 33px 25px; /* Large clickable area */
+		box-sizing: content-box;
+	}
+}

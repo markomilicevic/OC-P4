@@ -1,0 +1,15 @@
+@import "../bases/_variables.scss";
+
+/* Badge module */
+
+.badge {
+	display: inline-block;
+	background-color: $green-color;
+	color: $green-font-color;
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: $medium-font-weight;
+	padding: 7px 9px 7px 9px;
+	border-radius: 2px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,329 @@
+/* Variables */
+/* Fonts */
+/* Colors */
+/* Breakpoints */
+/* External fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
+/* Variables */
+/* Fonts */
+/* Colors */
+/* Breakpoints */
+/* Reset */
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Variables */
+/* Fonts */
+/* Colors */
+/* Breakpoints */
+body {
+  background-color: #f6f6f6;
+}
+
+.page {
+  min-width: 375px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Variables */
+/* Fonts */
+/* Colors */
+/* Breakpoints */
+/* Header module */
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 63px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  position: relative;
+  /* When only a child (the logo on the Home) */
+}
+.header nav a, .header__last {
+  display: inline-block;
+  width: 55px;
+  padding: 17px;
+}
+.header nav a {
+  color: black;
+}
+.header__logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.875rem;
+  font-weight: 400;
+  color: #101010;
+  padding-top: 6px;
+}
+.header__last {
+  /* This element exists to make the logo centered */
+  visibility: hidden;
+}
+.header > *:only-child {
+  margin: auto;
+}
+
+/* Variables */
+/* Fonts */
+/* Colors */
+/* Breakpoints */
+/* Button module */
+.button {
+  display: inline-block;
+  border-radius: 25px;
+  background: linear-gradient(175deg, rgb(251, 62, 198) 0%, rgb(147, 86, 220) 100%);
+  color: white;
+  background: linear-gradient(175deg, rgb(251, 62, 198) 0%, rgb(147, 86, 220) 100%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  padding: 13px 18px 13px 18px;
+  text-align: center;
+}
+
+/* Variables */
+/* Fonts */
+/* Colors */
+/* Breakpoints */
+/* Like module */
+.like {
+  display: inline-block;
+  width: 22px;
+  height: 21px;
+  cursor: pointer;
+}
+
+/* Variables */
+/* Fonts */
+/* Colors */
+/* Breakpoints */
+/* Variables */
+/* Fonts */
+/* Colors */
+/* Breakpoints */
+/* Badge module */
+.badge {
+  display: inline-block;
+  background-color: #99e2d0;
+  color: #008766;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  padding: 7px 9px 7px 9px;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Enriched card module */
+.enriched-card {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+}
+.enriched-card__link {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.enriched-card__badge {
+  position: absolute;
+  top: 13px;
+  right: 12px;
+}
+.enriched-card__photo {
+  display: flex;
+  height: 174px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.enriched-card__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 70px 16px 13px;
+}
+.enriched-card__content h3 {
+  display: flex;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: black;
+  padding-bottom: 5px;
+}
+.enriched-card__content span {
+  display: flex;
+  font-size: 1.063rem;
+  font-weight: 300;
+  color: black;
+}
+.enriched-card__like {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 25px 25px 33px 25px; /* Large clickable area */
+  box-sizing: content-box;
+}
+
+/* Variables */
+/* Fonts */
+/* Colors */
+/* Breakpoints */
+/* Footer module */
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  padding: 22px 25px 22px 25px;
+}
+.footer__logo {
+  width: 139px;
+  height: 27px;
+  filter: invert(100%); /* Switch from black to white color */
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  gap: 7px;
+}
+.footer__links a {
+  color: white;
+  font-size: 1rem;
+}
+.footer__links a i {
+  width: 22px;
+}
+
+/* Home page */
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 0 17px 0;
+  background-color: #eaeaea;
+}
+.location__icon {
+  color: #353535;
+}
+.location__text {
+  padding-left: 17px;
+  font-weight: 500;
+  color: #353535;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px 60px 20px;
+}
+.title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.title p {
+  font-weight: 300;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px 70px 20px;
+  gap: 26px;
+  background-color: white;
+}
+.steps > * {
+  width: 100%;
+  margin: auto;
+}
+.steps h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  padding-bottom: 2px;
+}
+.steps__list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-left: 12px;
+  background-color: #f6f6f6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 24px 0 24px 0;
+}
+.step > * {
+  position: relative;
+  left: -12px;
+}
+.step__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  color: white;
+  background-color: #9356dc;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  top: 3px;
+}
+.step__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  color: #7e7e7e;
+}
+.step__icon--primary {
+  color: #9356dc;
+}
+.step__text {
+  font-weight: 500;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  padding: 54px 20px 66px 20px;
+  gap: 18px;
+  width: 100%;
+  margin: auto;
+}
+.restaurants h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 2px;
+}
+.restaurants__list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}

@@ -1,0 +1,78 @@
+@import "../bases/_variables.scss";
+
+/* Card module */
+
+.card {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	cursor: pointer;
+
+	&__main {
+		display: block;
+		padding: 13px 5px 13px 15px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+
+		& > * {
+			display: inline;
+		}
+
+		h3 {
+			font-size: 1.125rem;
+			font-weight: $medium-font-weight;
+		}
+
+		span {
+			padding-top: 3px;
+			font-size: 0.938rem;
+			font-weight: $light-font-weight;
+		}
+	}
+
+	&__secondary {
+		position: relative;
+		display: flex;
+		padding-left: 10px;
+
+		strong {
+			display: flex;
+			align-items: end;
+			font-size: 0.938rem;
+			font-weight: $bold-font-weight;
+			padding-right: 13px;
+			padding-bottom: 13px;
+		}
+	}
+
+	&__action {
+		position: absolute;
+		top: 0;
+		left: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $green-color;
+		width: 60px;
+		height: 68px;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+
+		i {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 20px;
+			height: 20px;
+			color: $green-color;
+			background-color: $white-color;
+			border-radius: 50%;
+			line-height: 1rem;
+		}
+	}
+}
